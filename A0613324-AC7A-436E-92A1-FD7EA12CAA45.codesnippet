@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>Class debugClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+    if (debugClass) {
+        SEL aSelector = NSSelectorFromString(@"prepareDebuggingOverlay");
+        NSMethodSignature *signiture = [debugClass methodSignatureForSelector:aSelector];
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signiture];
+        [invocation setTarget:debugClass];
+        [invocation setSelector:aSelector];
+        [invocation invoke];
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A0613324-AC7A-436E-92A1-FD7EA12CAA45</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cus_debug</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
