@@ -3,28 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>shareInstance</string>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)manager {
-    static &lt;#Class#&gt; *_manager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        _manager = [[self alloc] init];
-    });
-    return _manager;
-}</string>
+	<string>SSDKSetupWeChatParamsByText</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBCB9E67-84AB-4685-BECF-0057CBB280E5</string>
+	<string>F1B7D05F-46D3-4FD3-B458-E19D836EBEA8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cus_shareInstance</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
