@@ -3,22 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakSelf</string>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof__(self) weakSelf = self;
-__strong __typeof__(weakSelf) strongSelf = weakSelf;</string>
+	<string>    void (^blockVar)(NSData *, NSURLResponse *, NSError *) = ^(NSData * data, NSURLResponse * response, NSError * error){
+        
+    };</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8C7FF812-83E6-4432-837B-832E8883AF96</string>
+	<string>4C4C3345-1E42-485C-8826-204A7C75B50A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>weakself</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cus_weak_self</string>
+	<string>cus_block_var</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

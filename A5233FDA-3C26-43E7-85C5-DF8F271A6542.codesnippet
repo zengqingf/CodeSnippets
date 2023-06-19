@@ -3,22 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>weakSelf</string>
+	<string>manager</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak __typeof__(self) weakSelf = self;
-__strong __typeof__(weakSelf) strongSelf = weakSelf;</string>
+	<string>+ (instancetype)manager {
+    static &lt;#Class#&gt; *_manager = nil;
+    if(_manager == nil) {
+        _manager = [[self alloc] init];
+    }
+    return _manager;
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8C7FF812-83E6-4432-837B-832E8883AF96</string>
+	<string>A5233FDA-3C26-43E7-85C5-DF8F271A6542</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>weakself</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cus_weak_self</string>
+	<string>cus_manager</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
