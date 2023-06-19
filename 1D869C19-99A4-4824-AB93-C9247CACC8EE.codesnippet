@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>+ (instancetype)defaultManager{
+    static &lt;#Class#&gt; *_manager = nil;
+    if(_manager == nil) {
+        _manager = [[self alloc] init];
+    }
+    return _manager;
+}
+
++ (instancetype)singleton{
+    static &lt;#Class#&gt; *_manager = nil;
+    if(_manager == nil) {
+        _manager = [[self alloc] init];
+    }
+    return _manager;
+}
+
++ (instancetype)sharedManager{
+    static &lt;#Class#&gt; *_manager = nil;
+    if(_manager == nil) {
+        _manager = [[self alloc] init];
+    }
+    return _manager;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1D869C19-99A4-4824-AB93-C9247CACC8EE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cus_swifit_manager</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
