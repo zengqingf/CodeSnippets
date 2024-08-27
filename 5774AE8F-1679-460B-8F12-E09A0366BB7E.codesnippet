@@ -3,31 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>shareInstance</string>
+	<string>NSDateFormatter</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)manager {
-    static &lt;#Class#&gt; *_manager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&amp;onceToken, ^{
-        _manager = [[self alloc] init];
-    });
-    return _manager;
-}</string>
+	<string>NSDate *date = [NSDate date];
+NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+[formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+
+// 强制使用 en_US_POSIX 以确保 24 小时制和稳定性
+[formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+
+NSString *dateStr = [formatter stringFromDate:date];
+NSLog(@"%@", dateStr);
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BBCB9E67-84AB-4685-BECF-0057CBB280E5</string>
+	<string>5774AE8F-1679-460B-8F12-E09A0366BB7E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>cus_shareInstance</string>
+	<string>cus_dateformatter</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
